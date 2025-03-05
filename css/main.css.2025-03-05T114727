@@ -1,0 +1,33 @@
+/* Basic Reset */
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+.horizontal-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-menu li {
+    margin: 0 20px;
+}
+
+.horizontal-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.horizontal-menu a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
