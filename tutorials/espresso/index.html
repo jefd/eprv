@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Espresso</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -18,20 +18,37 @@
         <a href="/conduct">Code of Conduct</a>
     </nav>
 
+
     <main>
         <header>
-            <h2>Events</h2>
         </header>
 
-        <section>
-          <a href="/events/eprv6/"><h3>EPRV 6</h3></a>
-          <p>The Sixth Workshop on Extremely Precise Radial Velocities</p>
-        </section>
+        <h2>How to build and run the espresso project</h2>
+        <hr>
 
-        <section>
-          <a href="/events/eprv7/"><h3>EPRV 7</h3></a>
-          <p>The Seventh Workshop on Extremely Precise Radial Velocities</p>
-        </section>
+        <p>First clone the repo:</p>
+        <pre>
+          <code>
+            git clone https://github.com/abc/xyz/
+          </code>
+        </pre>
+
+        <p>Next, build the project</p>
+        <pre>
+          <code>
+            cd xyz
+            make
+            make build
+          </code>
+        </pre>
+
+        <p>Run the resulting binary</p>
+        <pre>
+          <code>
+            cd bin
+            ./run
+          </code>
+        </pre>
 
     </main>
 

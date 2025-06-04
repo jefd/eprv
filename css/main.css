@@ -1,35 +1,117 @@
-/* Reset default margin and padding */
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      padding-top: 60px;
+    }
 
-nav {
-    background-color: #333;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-}
+    /*
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    */
 
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: inline-block;
-}
+    a {
+        color: #0077cc;
+        text-decoration: none;
+    }
 
-nav a:hover {
-    background-color: #575757;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    /*background-color: #f4f4f4;*/
-    border-radius: 8px;
-    width: fit-content; 
-}
+
+    /* Header Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #222;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      font-weight: 500;
+      padding: 0.5rem 0;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    pre {
+        background-color: #dddddd;
+        border-radius: 8px;
+    }
+   
+    code {
+        padding: 0.2em 0.4em;
+        border-radius: 8px;
+        /* font-family: 'Courier New', Courier, monospace;*/
+        font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);
+    }
+
+    section ul {
+      margin: 20px;
+    }
+    
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+    }
 
